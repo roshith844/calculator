@@ -1,3 +1,8 @@
+function operate(num1,num2){
+     add(num1,num2)
+}
+
+
 function add(number1,number2) {
      let sum =number1+number2
      return sum;
