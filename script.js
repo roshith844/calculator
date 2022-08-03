@@ -1,17 +1,25 @@
-const buttons = document.querySelectorAll('button');
-buttons.forEach((button)=>{
-     button.addEventListener('click',()=>{
-     document.getElementById("display").innerText+=button.id;
-     })
-})
-
-function operate(num1,num2){
-     add(num1,num2)
+let temp;
+let operatorSaved;
+function showOnScreen(numberInput){
+  temp= document.getElementById('display').innerText+= numberInput
+}
+function showOperator(input){
+     if(input===1){
+          operatorSaved=1;
+          }
+     else if(input===2){
+          operatorSaved=2;
+     }else if(input===3){
+          operatorSaved=3;
+     }else if(input===4){
+          operatorSaved=4;
+     } 
 }
 
-
+function operate(){
+}
 function add(number1,number2) {
-     let sum =number1+number2
+     let sum=number1+number2
      return sum;
    };
    
