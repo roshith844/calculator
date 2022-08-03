@@ -1,3 +1,10 @@
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button)=>{
+     button.addEventListener('click',()=>{
+     document.getElementById("display").innerText+=button.id;
+     })
+})
+
 function operate(num1,num2){
      add(num1,num2)
 }
