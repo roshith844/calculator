@@ -16,3 +16,7 @@ function multiply (array) {
    }
    return Result
    };
+   function divide (number1,number2) {
+   let divisionResult=number1/number2;
+   return divisionResult;
+   };
